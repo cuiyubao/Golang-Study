@@ -13,7 +13,7 @@ func main() {
 func defaultTOTPUsage() {
 	tt := int(time.Now().Unix() / 60)
 	//println(tt)
-	// 替换成上一步得到的secret
+	// 替换成上一步得到的secret  https://link-otp.lianjia.com      /api/otp/verifysecret
 	scret := ""
 	hotp := gotp.NewDefaultHOTP(scret)
 	// 111111替换成自己的固定密码
